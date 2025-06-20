@@ -1,0 +1,250 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: #f9f9ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 850px;
+        height: 620px;
+        background: #fff;
+        display: flex;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    /* LEFT PANEL (Yellow side) */
+    .left-panel {
+        width: 50%;
+        background: #eeeeb4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+        position: relative;
+    }
+
+    .left-panel h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+        color: #232355;
+    }
+
+    .left-panel p {
+        font-size: 16px;
+        color: #232355;
+        margin-bottom: 25px;
+    }
+
+    .left-panel a.register-btn {
+        padding: 10px 25px;
+        border: 2px solid #151564;
+        border-radius: 30px;
+        background: transparent;
+        color: #151564;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .left-panel a.register-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(21, 21, 100, 0.2);
+    }
+
+    /* BACK ARROW INSIDE YELLOW PANEL */
+    .back-arrow {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        font-size: 24px;
+        color: #232355;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .back-arrow:hover {
+        transform: translateX(-3px);
+        color: #151564;
+    }
+
+    /* RIGHT PANEL (Form area) */
+    .right-panel {
+        width: 50%;
+        padding: 40px 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: #232355;
+        margin-bottom: 30px;
+    }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .input-group i {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #7f8c8d;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 15px 15px 15px 45px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        color: #232355;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 15px;
+        background: #151564;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 15px 0;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #232355;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(21, 21, 100, 0.2);
+    }
+
+    .divider {
+        text-align: center;
+        margin: 10px 0 15px;
+        font-size: 14px;
+        color: #888;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        background: #f5f7fa;
+        color: #151564;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .social-icons a:hover {
+        background: #151564;
+        color: #fff;
+        transform: translateY(-3px);
+    }
+
+    .switch-form {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .switch-form a {
+        color: #151564;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .switch-form a:hover {
+        text-decoration: underline;
+    }
+
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            width: 95%;
+            height: auto;
+        }
+
+        .left-panel,
+        .right-panel {
+            width: 100%;
+            height: auto;
+            padding: 30px 20px;
+        }
+
+        .left-panel {
+            order: 2;
+        }
+
+        .right-panel {
+            order: 1;
+        }
+
+        .back-arrow {
+            top: 15px;
+            left: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .left-panel h1 {
+            font-size: 24px;
+        }
+
+        .left-panel p {
+            font-size: 14px;
+        }
+
+        .input-group input {
+            font-size: 14px;
+            padding: 12px 12px 12px 40px;
+        }
+
+        .btn {
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        .social-icons a {
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+        }
+
+        .logo {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }

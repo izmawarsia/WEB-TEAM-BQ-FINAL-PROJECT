@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="welcome-panel">
+            <a href="index.html" class="back-arrow">
+                <i class='bx bx-arrow-back'></i>
+            </a>
+            <h1>Hello, Welcome!</h1>
+            <p>Don't have an account?</p>
+            <a href="register.html" class="register-btn" id="registerBtn">Register</a>
+        </div>
+
+        <div class="form-panel">
+            
+            <form class="login-form" id="login-form" onsubmit="loginUser(event)">
+                <div class="logo">
+                    <span>TechEduca</span>
+                </div>
+
+                <div class="input-group">
+                    <i class='bx bx-user'></i>
+                    <input type="email" id="login-email" placeholder="Email" required>
+                </div>
+
+                <div class="input-group">
+                    <i class='bx bx-lock-alt'></i>
+
+                    <input type="password" id="login-password" placeholder="Password" required>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+
+                <div class="divider">
+                    <span>or login with social platforms</span>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://accounts.google.com/" target="_blank"><i class='bx bxl-google'></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
