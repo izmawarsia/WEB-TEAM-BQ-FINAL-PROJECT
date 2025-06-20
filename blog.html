@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog</title>
+
+  <link rel="stylesheet" href="blog.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <nav>
+    <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+    <div class="navigation">
+      <i id="menu-btn" class="fas fa-bars"></i>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html"><i class="fa fa-user"></i> Sign Up</a></li>
+      </ul>
+      <i id="menu-close" class="fas fa-times"></i>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-banner">
+    <h1>TechEduca Blog</h1>
+    <p>Discover the latest insights in education technology and teaching methodologies</p>
+  </section>
+
+  <!-- Blog Container -->
+  <div id="blog-container" class="blog-container"></div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-col">
+      <h3>Top Products</h3>
+      <ul>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Contact</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>FAQ's</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Features</h3>
+      <ul>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <ul>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Service</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>You can trust us, we only send promo offers.</p>
+      <div class="subscribe">
+        <input type="email" id="newsletter-email" placeholder="Your Email">
+        <button class="yellow" onclick="subscribe()">SUBSCRIBE</button>
+        <p id="newsletter-msg"></p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © 2025 All rights reserved | This template is made by Web Team</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="blog.js"></script>     <!-- for blog API fetch -->
+</body>
+</html>
