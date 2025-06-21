@@ -1,0 +1,192 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.Certificate-Generator {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.Certificate-Generator h1{
+  color:rgb(35,35,85);
+    font-weight:700;
+    font-size:2.5rem;
+    padding:4vw 8vw 4vw 8vw;
+}
+.Certificate-Generator i{
+  color:black;
+  margin:0 15px 20px 0;
+  font-size:2rem;
+}
+
+
+.Certificate-Generator #certificate-form{
+  display:flex;
+  flex-direction:column;
+  background-color: #fff;
+  border-radius:8px;
+  padding:40px;
+  box-shadow:0 8px 32px 0 rgba(31,38,135,0.25);
+  
+}
+
+.Certificate-Generator #certificate-form  label{
+  color:#413c3c;
+    font-weight:500;
+    font-size:1.2rem;
+}
+.Certificate-Generator #certificate-form input{
+  
+   padding:10px 15px;
+    margin:15px 0;
+    outline:none;
+    border:2px solid rgb(236,226,229);
+    border-radius:5px;
+    width:100%;
+}
+
+.Certificate-Generator #certificate-form button.blue{
+ 
+    text-decoration:none;
+    font-weight:600;
+    font-size:0.9rem;
+    padding:14px 15px;
+    background-color: #fff;
+    text-align: center;
+    color:#fff;
+    background-color: rgb(21,21,100);
+    transition:0.3s ease;
+    
+
+}
+.Certificate-Generator #certificate-form button.blue:hover{
+color: rgb(21,21,100);
+    background-color:#fff;
+}
+#pay-btn {
+  margin-top:20px;
+   text-decoration:none;
+    font-weight:600;
+    font-size:0.9rem;
+    padding:14px 15px;
+    background-color: #fff;
+    text-align: center;
+    color:#fff;
+    background-color: rgb(21,21,100);
+    transition:0.3s ease;
+}
+
+#pay-btn:hover {
+  color: rgb(21,21,100);
+  background-color:#fff;
+}
+
+
+
+
+
+
+#certificate-container {
+  background-image: url("images/certificate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 16 / 11;
+  margin: 15px auto;
+  visibility: hidden;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#certificate {
+  padding: 5%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  width: 100%;
+
+}
+
+#certificate h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color:rgb(35,35,85);
+
+
+}
+
+#certificate p {
+  padding-bottom:5px;
+  font-style:italic;
+}
+
+@media (max-width: 1024px) {
+  #certificate h2 {
+    font-size: 1.7rem;
+  }
+
+  #certificate {
+    font-size: 1rem;
+    padding: 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #certificate-container {
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  #certificate h2 {
+    font-size: 1.5rem;
+  }
+
+  #certificate {
+    font-size: 0.95rem;
+    padding: 4vw 5vw;
+  }
+}
+
+/* Small phones like iPhone SE */
+@media (max-width: 480px) {
+  .Certificate-Generator i,.Certificate-Generator h1{
+    font-size:1.4rem;
+  }
+
+  #certificate h2 {
+    font-size: 1.3rem;
+  }
+
+  #certificate {
+    font-size: 0.9rem;
+  }
+}
+
+
+  @media(min-width:530px) and 
+(max-width:550px){
+  .Certificate-Generator i,.Certificate-Generator h1{
+    font-size:1.6rem;
+  }
+
+  
+}
+ @media(min-width:343px) and 
+(max-width:345px){
+  .Certificate-Generator i,.Certificate-Generator h1{
+    font-size:1.2rem;
+  }
+}
